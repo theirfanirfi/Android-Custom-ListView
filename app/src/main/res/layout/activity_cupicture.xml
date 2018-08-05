@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.irfanirfi.customlistview.CUpicture">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        />
+
+    <Button
+        android:id="@+id/chooseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:layout_weight="1"
+        android:text="Choose" />
+
+    <Button
+        android:id="@+id/uploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chooseImage"
+        android:layout_weight="1"
+        android:text="Upload" />
+
+    <ImageView
+        android:id="@+id/downloadImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/uploadImage"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        />
+    <Button
+        android:id="@+id/downloadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/downloadImageView"
+        android:layout_weight="1"
+        android:text="Download" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@id/downloadImage"
+        />
+
+</RelativeLayout>
